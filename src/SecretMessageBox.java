@@ -19,22 +19,21 @@ public class SecretMessageBox {
 	public static void main(String[] args) {
 		
 	
-	// 1. Set the passcode in a String variable
-	String message = JOptionPane.showInputDialog("Enter the secret code.");
-	
-	if(message.equalsIgnoreCase("Cats lick shoes while dancing on pink clouds!")) {
-		JOptionPane.showMessageDialog(null, "WOO HOO! You may come in.");
-	}
-	else {
-		JOptionPane.showMessageDialog(null, "INTRUDER! LEAVE HERE AT ONCE!");
-	}
+	// 1. Set the passcode in a String variable	
+String password = "loud tate";
 	// 2. Using a pop-up, ask for a secret message and store it in a variable
-
+String hello = JOptionPane.showInputDialog("MESSAGE REQUIRED");
 	// 3. Ask your friend for the passcode and store it in a variable
-
+String andrew = JOptionPane.showInputDialog("ENTER THE PASSCODE");
 	// 4. If the passcode matches, show the secret message
-
+if(andrew.equalsIgnoreCase("loud tate")) {
+	JOptionPane.showMessageDialog(null, "---ACCESS GRANTED---");
+	JOptionPane.showMessageDialog(null, hello);}
+	
 	// 5. If the passcode does not match, pop-up "INTRUDER!!"
+else {
+JOptionPane.showMessageDialog(null, "INCORRECT");
+}
 
 	// [optional] 6. Have your friend also enter a username, and make sure it is correct before releasing the secret message.
 	}
